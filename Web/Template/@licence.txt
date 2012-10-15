@@ -1,0 +1,7 @@
+1. Vous êtes libre de modifier, transformer et adapter ce kit graphique pour une utilisation commerciale ou non commerciale à la condition :
+- que gardiez intacts et visibles les informations (textes et liens) spécifiées dans le kit graphique
+- que vous ne modifiez ni ne supprimiez pas certaines lignes sont signalées dans le code source du kit comme ne devant pas être supprimées ou modifiées.(Si vous les supprimez ou les modifiez un message d'alerte pourra apparaître.)
+2. Images : vous avez le droit d'utiliser les images uniquement dans le cadre de la création du site que vous réaliserez à partir du kit graphique. Toute autre uilisation est srtictement interdite.
+3. Ce kit graphique inclut également dfGallery (http://www.dezinerfolio.com/dfgallery/) et lightbox (http://www.huddletogether.com/projects/lightbox2/) qui possèdent leur propore license.
+
+CE KIT GRAPHIQUE EST FOURNI « EN L'ÉTAT » ET SANS AUCUNE GARANTIE EXPLICITE OU IMPLICITE, Y COMPRIS, SANS S'Y LIMITER, LES GARANTIES IMPLICITES DE  QUALITÉ MARCHANDE ET D'ADÉQUATION À UN BUT PARTICULIER. LES AUTEURS NE POURRONT EN AUCUN CAS ETRE TENUS RESPONSABLES DE DOMMAGES, QUELS QU'ILS SOIENT, Y COMPRIS, MAIS DE FAÇON NON LIMITATIVE, DE PERTE DE L'USAGE, DU MANQUE À GAGNER OU DE PERTE DE DONNÉES, QUELLE QUE SOIT LA THÉORIE DE RESPONSABILITÉ (Y COMPRIS LA NÉGLIGENCE) EN RELATION AVEC L'UTILISATION DE CE KIT GRAPHIQUE.

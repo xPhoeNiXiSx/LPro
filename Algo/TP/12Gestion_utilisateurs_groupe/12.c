@@ -1,0 +1,34 @@
+#include<stdio.h>
+#include <sys/types.h>
+#include<pwd.h>
+#include<grp.h>
+
+int main()
+{
+	struct passwd *user=getpwent();
+	struct group *group=getgrent();
+	char **nom_mem;
+	
+
+	while(user != NULL)
+	{
+		printf("%s -> ",user->pw_name);
+		printf("%s\n",(getgrgid(user->pw_gid))->gr_name);
+		user=getpwent();
+	}
+	setpwent();
+
+	while(group != NULL)
+	{
+		printf("%s -> ",group->gr_name);
+		nom_mem = group->gr_mem;
+		while(*nom_mem != NULL)
+		{
+			printf("%s, ",*nom_mem);
+			nom_mem++;
+		}
+		group = getgrent();
+		printf("\n");
+	}	
+	return 0;
+}

@@ -1,0 +1,127 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+void ajout_deb (LISTE *L,int e)
+{
+	LISTE nouv;
+	nouv=(LISTE)malloc(sizeof(struct s_maillon));
+	(*nouv).elt=e;
+	(*nouv).suivant=*L;
+	*L=nouv;
+}
+
+void rempliste (LISTE *L,int nombre, int borne_min, int borne_max)
+{
+	srand(time(NULL));
+	int random,i;
+
+	for (i=0;i<nombre;i++)
+	{
+		random=(rand()%(borne_min-borne_max))+borne_min;
+		printf("%d  ",random);
+		ajout_deb (&L,random);
+	}
+	printf("\n");
+}
+
+void operateur (LISTE *L, int nombre)
+{
+	srand(time(NULL));
+	int i,random;
+
+	for(i=0;i<nombre;i++)
+	{
+		random=(rand()%4)+1;
+		ajout_deb (&L,random);
+	}
+}
+
+int calcul(LISTE L1, LISTE L2 int aff)
+{
+	int result;
+	result = (*L1).elt;
+	if(aff!=0)
+	{	
+		L1=(*L1).suivant;
+		while (L1!=NULL)
+		{
+			switch ((*L2).elt)
+			{
+				case 1: result+=(*L1).elt;
+						break;
+				case 2: result-=(*L1).elt;
+						break;
+				case 3: result*=((*L1).elt);
+						break;
+				case 4: result/=(*L1).elt;
+						break;
+			}
+			L1=(*L1).suivant;
+			L2=(*L2).suivant;
+		}
+	}
+	else 
+	{
+		L1=(*L1).suivant;
+		while (L1!=NULL)
+		{
+			switch ((*L2).elt)
+			{
+				case 1: printf("%d + %d = %d\n",result,(*L1).elt,result+(*L1).elt); 
+						result+=(*L1).elt;
+						break;
+				case 2: printf("%d - %d = %d\n",result,(*L1).elt,result-(*L1).elt); 
+						result-=(*L1).elt;
+						break;
+				case 3: printf("%d * %d = %d\n",result,(*L1).elt,result*(*L1).elt); 
+						result*=((*L1).elt);
+						break;
+				case 4: printf("%d / %d = %d\n",result,(*L1).elt,result/(*L1).elt); 
+						result/=(*L1).elt;
+						break;
+			}
+			L1=(*L1).suivant;
+			L2=(*L2).suivant;
+		}
+	}
+
+return result;
+}
+
+void vider(LISTE *pL)
+{
+	LISTE p;
+	if(*pL==NULL) return;
+	else 
+	{
+		p=*pL;
+		*pL=(**pL).suivant;
+		free(p);
+		vider(pL);
+	}
+}	
+
+int main ()
+{
+	LISTE op=NULL,num=NULL;
+	int diff,prop,calc;
+	
+	printf("Difficulté ?");
+	scanf("%d\n",&diff);
+	
+	rempliste(&num,diff,1,20);
+	operateur(&op);
+	
+	calc=calcul(num,op,1);
+
+	printf("A vous de trouver %d \n",calc);
+
+	printf ("Saisissez votre proposition ?");
+	scanf ("%d\n",&prop);
+	
+	calcul (num,op,0);
+
+	printf("Vous êtes à %d de l'objectif.\n",(calc-prop));
+	return 0;
+}

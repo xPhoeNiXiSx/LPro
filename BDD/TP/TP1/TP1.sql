@@ -1,0 +1,52 @@
+/*SUPRESSION DE TABLE*/
+
+DROP TABLE Sinistre ;
+DROP TABLE Vehicule ;
+DROP TABLE Client ;
+
+
+/*CREATION DE TABLE*/
+
+
+CREATE TABLE Client (
+	num_secu CHAR (13) PRIMARY KEY ,
+	nom varchar(30),
+	prenom varchar(30)
+);
+
+
+CREATE TABLE Vehicule (
+	num_immat CHAR(9) PRIMARY KEY,
+	modele VARCHAR(30) , 
+	annee NUMERIC(4),
+	num_secu CHAR(13),
+	FOREIGN KEY (num_secu) REFERENCES Client(num_secu)
+);
+
+
+CREATE TABLE Sinistre (
+	num_sinistre NUMERIC(10) PRIMARY KEY ,
+	montant NUMERIC(10,2),
+	resp NUMERIC(3),
+	num_secu CHAR(13),
+	num_immat CHAR(9),
+	FOREIGN KEY (num_secu) REFERENCES Client(num_secu),
+	FOREIGN KEY (num_immat) REFERENCES Vehicule(num_immat)
+);
+
+
+/*SAISIE VALEUR :*/
+
+
+INSERT INTO Client(num_secu,nom,prenom) VALUES('1710549123456' ,'Rudoux' ,'Patrick');
+INSERT INTO Client(num_secu,nom,prenom)  VALUES  ( '1670649234567' ,'Lenoir' ,'Herve' );
+INSERT INTO Client(num_secu,nom,prenom)  VALUES ( '2740749345678' ,'Drabert' ,'Severine' );
+
+INSERT INTO Vehicule(num_immat,modele,annee,num_secu) VALUES ('1234 TZ 49','Twingo','2000','1710549123456');
+INSERT INTO Vehicule(num_immat,modele,annee,num_secu) VALUES ('2345 RA 49','R21','1980','1670649234567');
+INSERT INTO Vehicule(num_immat,modele,annee,num_secu) VALUES ('3456 RZ 49','Supercinq','1984','1710549123456');
+
+INSERT INTO Sinistre(num_sinistre,montant,resp,num_secu,num_immat) VALUES ('200201','1000','0','1670649234567','2345 RA 49');
+INSERT INTO Sinistre(num_sinistre,montant,resp,num_secu,num_immat) VALUES ('200202','NULL','50','1710549123456','1234 TZ 49');
+
+

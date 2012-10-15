@@ -1,0 +1,29 @@
+#include<stdio.h>
+
+int main()
+{
+	int somme,i,nbr,test;
+
+	printf("Voulez-vous tester la perfection d'un nombre ?(1=oui, 2=non)");
+	scanf("%d",&test);	
+
+	while(test != 2)
+	{
+
+		somme=0;
+
+		printf("Entrez un entier : ");
+		scanf("%d",&nbr);
+
+		for(i=1;i<nbr;i++)
+		{
+			if(nbr%i==0) somme+=i;
+		}
+
+		if(somme==nbr) printf("C'est un nombre parfait\n");
+		else printf("Ce n'est pas un nombre parfait\n");
+	
+	printf("Voulez-vous tester la perfection d'un autre nombre ?(1=oui, 2=non)");
+	scanf("%d",&test);	
+	}
+		

@@ -1,0 +1,1 @@
+int palin(char *s);

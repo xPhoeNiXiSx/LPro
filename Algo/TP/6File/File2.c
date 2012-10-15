@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+#define DICT "/use/share/dict/words"
+#define FICHIER "monfichier"
+
+int main ()
+{
+	FILE *lect, *ecri;
+
+	lect = fopen(DICT,"r");
+	ecri = fopen(FICHIER,"rw");
+
+	if (lect == NULL)
+	{
+		perror (DICT);
+		return 1;
+	}
+	if (ecri == NULL)
+	{
+		perror (FICHIER);
+		return 2;
+	}
+
+
+	fclose(lect);
+	fclose(ecri);
+	
+	return 0;
+}

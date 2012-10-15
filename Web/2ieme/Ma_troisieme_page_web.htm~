@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<title>Ma Page Mw3</title>
+		<script type="text/javascript" src="calculatrice.js"></script>
+		<link rel="stylesheet" type="text/css" href="CSS3.css"  title="gh" />		
+	</head>
+
+
+
+<body class="bg">
+
+<div id="page"><!--Debut div PAGE-->
+
+	<div id="top"><!--DEBUT TOP-->
+					<div id="top_part_1"><span class="green">B</span>ienvenue sur</div> 
+					<div id="top_part_2"><span class="bleu">ma</span> troisieme page <span class="orange">Web</span></div>
+					<div id="carre_droite">
+						<div id="carre_orange"><div class="sign">&copy Tf</div></div>
+						<div id="carre_vert"></div>
+						<div id="carre_bleu"></div>
+						<div id="carre_jaune"></div>
+					</div>
+	</div><!--FIN TOP-->
+
+	<div id="ligne"></div>
+
+		<div id="menu">
+		<ul>
+			<li><a href="https://elite.callofduty.com/career#/playercardmw3">Mon Compte</a></li>
+			<li><a href="http://www.callofduty.com/blackops">BlackOps</a></li>
+			<li><a href="http://www.callofduty.com/fr/elite">Accueil Elite</a></li>
+		</ul>
+		</div>
+
+	<div class="clearboth"></div>
+
+	<div id="colonne"><!--DEBUT COLONNE-->
+			<div class="news"><!--NEWS-->
+				<h1>News sur PhoeNiXiS</h1>
+	
+			<span class="bold_orange">6 Septembre 2012</span>
+			<br/>
+<p>
+Je suis actuellement prestige 7 level 80.
+</p>
+			<br/>
+
+				<a href="https://www.facebook.com/" class="right">Mon Facebook...</a>
+
+			</div><!--NEWS-->
+
+
+			<div class="search">
+			<h1><span class="white">Recherche sur</span> G<span class="red">o</span><span class="yellow">o</span>g<span class="green_classic">l</span><span class="red">e</span></h1>
+				<form action="https://www.google.fr/search">
+					<p>
+					<input class="barre" type="text" value="" name="q">
+					<input type="submit" value="Envoyer">
+					</p>
+				</form>
+
+<h1>Mes passions</h1>
+	<h2>Naruto Shippuden &nbsp:</h2>
+	<a href="http://www.captainaruto.com/lecture" class="under">Scans Naruto Shippuden</a>
+	<a href="http://www.naruto-shippudenvf.com/nsepisodes/episodes-naruto-shippuden-streaming-vf-vostfr.php" class="under">Video Shippuden(Vostfr)</a>
+
+			</div>
+
+	</div><!--Fin COLONNE-->
+
+	
+	<div id="contenu"><!--DEBUT CONTENU-->
+
+
+        <table class="calculatrice" id="calc"><!---------------------Début Calculatrice------------------>
+            <tr>
+                <td colspan="4" class="calc_td_resultat">
+                    <input type="text" readonly="readonly" name="calc_resultat" id="calc_resultat" class="calc_resultat" onkeydown="javascript:key_detect_calc('calc',event);" />
+                </td>
+            </tr>
+            <tr>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="CE" onclick="javascript:f_calc('calc','ce');" />
+                </td>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="&larr;" onclick="javascript:f_calc('calc','nbs');" />
+                </td>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="%" onclick="javascript:f_calc('calc','%');" />
+                </td>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="+" onclick="javascript:f_calc('calc','+');" />
+                </td>
+            </tr>
+            <tr>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="7" onclick="javascript:add_calc('calc',7);" />
+                </td>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="8" onclick="javascript:add_calc('calc',8);" />
+                </td>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="9" onclick="javascript:add_calc('calc',9);" />
+                </td>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="-" onclick="javascript:f_calc('calc','-');" />
+                </td>
+            </tr>
+                        <tr>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="4" onclick="javascript:add_calc('calc',4);" />
+                </td>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="5" onclick="javascript:add_calc('calc',5);" />
+                </td>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="6" onclick="javascript:add_calc('calc',6);" />
+                </td>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="x" onclick="javascript:f_calc('calc','*');" />
+                </td>
+            </tr>
+            <tr>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="1" onclick="javascript:add_calc('calc',1);" />
+                </td>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="2" onclick="javascript:add_calc('calc',2);" />
+                </td>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="3" onclick="javascript:add_calc('calc',3);" />
+                </td>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="&divide;" onclick="javascript:f_calc('calc','/');" />
+                </td>
+            </tr>
+            <tr>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="0" onclick="javascript:add_calc('calc',0);" />
+                </td>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="&plusmn;" onclick="javascript:f_calc('calc','+-');" />
+                </td>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="," onclick="javascript:add_calc('calc','.');" />
+                </td>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="=" onclick="javascript:f_calc('calc','=');" />
+                </td>
+            </tr>
+        </table><!-----------------------------------Fin calculatrice--------------------------------->
+        <script type="text/javascript">
+                document.getElementById('calc').onload=initialiser_calc('calc');
+        </script>
+
+
+
+
+	</div><!--FIN CONTENU-->
+	<div class="clearboth"></div>
+	<div class="bottom"><!--DEBUT BOTTOM-->
+
+		<div id="carre_gauche">
+							<div id="carre_orange"><div class="sign">&copy Tf</div></div>
+							<div id="carre_vert"></div>
+							<div id="carre_bleu"></div>
+							<div id="carre_jaune"></div>
+		</div>
+
+	<div id="copyright">Copyright &copy; 2012 Thomas FRAQUET.</div>
+
+</div>
+
+	</div><!--FIN BOTTOM-->
+
+
+
+
+	
+</div><!--Fin div PAGE-->
+</body>
+
+</html>
+

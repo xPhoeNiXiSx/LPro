@@ -1,0 +1,51 @@
+-Shell = interpréteur de commande comme bash
+	il sert à la communication entre utilisateur et noyau (récupération des drivers, savoir ce qui est chargé dans le noyau)
+-Un utilisateur qui utilise le Shell/bin/csh, comment peut-il utiliser le Shell Bash ?
+	Il le peut en partie
+-Un shell est un logiciel qui réalise l'interface entre l'utilisateur et le noyau
+→ echo $ PATH
+
+
+-les partitions etendue d'arrive qu'au niveau de la 4ieme partition les trois premières sont primairescd 2
+
+					___________________________________________________
+
+					>>>>>>>>>>>>>>>>>CREER PARTITION<<<<<<<<<<<<<<<<<<<
+					___________________________________________________
+
+					___________________________________________________
+
+					>>>>>>>>>>>>>>>>>>>>FORMATER<<<<<<<<<<<<<<<<<<<<<<<
+					___________________________________________________
+
+ls mk<tab><tab>
+
+./mkfs.ext3 /dev/sdb1 --> formater en ext3 le sdb1
+
+					___________________________________________________
+
+					>>>>>>>>>>>>>>>>>MONTER UN PERIPH<<<<<<<<<<<<<<<<<<
+					___________________________________________________
+
+mount /dev/sdb1 /mnt./usb --> monter le sdb1 dans le repertoire /mnt/usb
+
+umount /mnt/usb1
+
+					___________________________________________________
+
+					>>>>>>>>>>>>>>>>>>>>>Commandes<<<<<<<<<<<<<<<<<<<<<
+					___________________________________________________
+
+su → co en root
+Sbin → directory pour les super commandes
+./fdisk → quand les commandes sont verouiller
+
+fdisk -l → voir partitions et disque dur
+	SDA → partitions (sda1, sda2,...)
+	* (amorce) → partition de démarrage du système
+
+fdisk /dev/sdb --> Créer des partitions
+
+sync --> synchronisation de tout le système
+
+

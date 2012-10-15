@@ -1,0 +1,59 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#define N 100
+
+void tri(char **tab) //7.2
+{
+	char *tmp1 = *tab;
+	char *tmp2 = *tab++;
+	char *tmp3;
+
+	while (tmp1++ != NULL)
+		while (tmp2 != NULL)
+		{
+			if (strcmp(tmp1,tmp2) < 0)  //>0 si s1 est plus petite que s2 dans l'alphabet
+			{
+				tmp3 = tmp1;
+				tmp1 = tmp2;
+				tmp2 = tmp3;
+			}
+		}	
+}
+
+
+
+int main ()
+{
+	int i,n;
+	char buffer[N];
+	char ** tab;
+
+	printf ("Combien y a-t-il de chaine ? ");
+	scanf ("%d",&n);
+
+	tab = malloc (n*sizeof(char *));
+
+	if (tab == NULL )
+	{
+		perror("malloc") ;
+		exit (1) ;
+	}
+	for (i=0 ; i<n ; i++ )
+	{
+		printf ("Entrez une chaine de caractère : ");
+		scanf ("%39s",buffer);//On lit au plus 39 caractères ou scanf("%*s",N-1,buffer);
+		tab[i]= malloc ((strlen(buffer)+1) * sizeof (char));
+			if (tab[i]==NULL)
+		strcpy (tab[i],buffer);
+	}
+
+	for(i=0 ; i<n ; i++)
+	{
+		free (tab[i]);
+	}
+	free (tab);
+
+	return 0 ;
+}

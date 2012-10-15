@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" type="text/css" href="moncss.css"  title="CSS" />
+	<title>
+			Page sur les News Blackops 2
+	</title>
+</head><!--Fin du head-->
+
+
+
+<body>
+
+	<div id="entete">
+	</div>
+
+	<div id="contenu">
+		<div id="middle"></div>
+		<div id="menu">
+			<h1 id="h1">Menu</h1>
+
+		<ul>
+			<li><a href="http://www.cod-blackops2.com/">Infos</a></li>
+			<li><a href="https://www.google.fr/search?q=black+ops+2&hl=fr&client=ubuntu&hs=VhW&pwst=1&channel=fs&prmd=imvns&tbm=isch&tbo=u&source=univ&sa=X&ei=OQpHUNL8Dsey0QXFjYGoBA&ved=0CCwQsAQ&biw=1680&bih=885">Gallerie d'images</a></li>
+			<li><a href="http://www.callofduty.com/fr/blackops2">Site officiel</a></li>
+		</ul>
+
+		</div>
+		<div id="menudroite">
+		
+<form action="https://www.google.fr/search" method="get">
+						<p>
+						Recherche Google &nbsp; :
+							<input type="text" value="Recherche" name="q"/>
+							<input type="submit" value="envoyer"/>
+	
+						</p>
+						</form>
+
+
+
+		</div>
+	</div>
+						
+
+	
+	
+	
+	<div id="enpied">
+		<p>
+			<h1><a href="http://validator.w3.org/check?uri=referer">VALIDE</a> (strict)</h1>
+		</p>
+	</div>
+	
+
+</body>
+
+</html>
+

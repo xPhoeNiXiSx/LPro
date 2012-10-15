@@ -1,0 +1,36 @@
+body {
+	background:url(Fond2.jpg) no-repeat top center black;
+	margin: 0;
+	padding: 0;
+	font-family:Verdana;
+	font-size: 12px;
+}
+
+#top{
+	height:120px;
+	background:url(Top.png) no-repeat center;
+	font-size:30px;
+	text-align:center;
+	line-height:120px;
+	color:white;
+	margin:50px;
+}
+
+#conteneur{
+	width:540px;
+	margin:0 auto;
+}
+
+#menu{
+	background: url(menu.jpg) no-repeat center;
+	text-align:center;
+}
+
+.petit{
+	font-size:8px;
+}
+
+.grand{
+	font-size:40px;
+}
+

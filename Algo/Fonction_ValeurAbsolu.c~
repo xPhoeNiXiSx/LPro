@@ -1,0 +1,7 @@
+#include<stdio.h>
+
+int absolute(int nb)
+{
+	if() return
+	else return
+}

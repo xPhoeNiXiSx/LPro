@@ -1,0 +1,24 @@
+TARGETS=6.1 6.2
+
+%: %.c
+	gcc -Wall -o $@ $@.c
+
+all: $(TARGETS)
+
+6.1: 6.1.c
+	gcc -Wall -o $@ $@.c -L../mylib -lmylib
+	./6.1
+
+6.2: 6.2.c
+	gcc -Wall -o $@ $@.c -L../mylib -lmylib
+	./6.2
+
+1:
+	./6.1
+
+2:
+	./6.2
+
+clean:
+	rm $(TARGETS)
+

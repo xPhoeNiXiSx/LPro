@@ -1,0 +1,91 @@
+//Thomas Fraquet LicPro Info
+#include <stdio.h>
+
+#define N 20
+
+
+//Initialise un tableau
+void init (tab T)
+{
+	int i;
+	for (i=0;i<N;i++) T[i] = -1;
+}
+
+
+//Empile une valeur passée en paramètre
+void empiler (tab T, int val)
+{
+	int i=0;
+	while ((T[i]!=-1) && (i<N))
+	i++;
+	T[i]=val;
+}
+
+
+//Depile la dernière valeur du tableau et la remplace par -1
+int depiler (tab T)
+{
+	int i=0;
+	while(T[i++]!=-1) && (i<N))
+	i++;
+	i=t[i];
+	t[i]=-1;
+	return i;
+}
+
+
+//Teste si un tableau est vide c-a-d si toute les valeur sont a -1
+int est_vide (int T)
+{
+	int i=0;
+	
+	while (i<N)
+	{
+		if (T[i]!=-1)
+			return 1;
+		else
+			i++;
+	}
+	return 0;
+}
+
+
+
+void enfiler (int T, int val)
+{
+	int i=0;
+	while ((T[i]!=-1) && (i<N))
+	i++;
+	T[i]=val;
+}
+
+
+void defiler (tab T)
+{
+
+}
+
+
+//Programme principal
+int main()
+{
+	int tab[N]=(1,2,3);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	return 0;
+}

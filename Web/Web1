@@ -1,0 +1,33 @@
+		Le Conceptuel
+
+html :  vieux -> html4
+	    Xhtml --> XML
+		HTML5 (pas finalisé) -> tablette
+
+		
+
+
+		La Technique
+
+&alpha; ---> entité       >entity list sur google
+&lt;
+&gt;
+&laquo,&raquo; ----> chevron français
+
+<p> --> balise ouvrante
+</p> --> balise fermante
+
+start="1983" --> attribut avec son et sa valeur
+
+ol
+ul
+dl
+
+blockquote
+
+<div>
+<table>
+<form>
+
+colspan
+rowspan

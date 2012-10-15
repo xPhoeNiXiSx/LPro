@@ -1,0 +1,19 @@
+Qu'est ce qu'un programme ?
+	- une suite d'instructions
+	- la métaphore du cours de cuisine
+	- Les langages classiques de programmation (dits procéduraux)
+		.1 programme
+			- un ensemble d'instructions
+			- manipulent des données
+	- Langages compilés VS interprétés
+	- autres langages : fonctionnel et logique
+		.fonction mathématique
+		.raisonnement
+
+
+
+ - SIMULA (65-70) : classe
+		-principe 1: on raccroche à la structure de données (champs), les codes qui peuvent les manipuler (méthode)
+		-Révolution copernicienne
+ - SMALLTALK (70-75) : héritage
+		-A.Kay (souris, interfaces graphiqus...)

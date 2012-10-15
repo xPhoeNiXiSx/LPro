@@ -1,0 +1,9 @@
+.body{
+	overflow-x:hidden;
+	background:url(Fond_CV.jpg);
+	background-repeat: repeat-y;
+    background-position: center;
+	margin: 0;
+	padding: 0;
+	font:12px Verdana,Arial,sans-serif;	
+}
