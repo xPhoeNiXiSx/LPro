@@ -1,0 +1,23 @@
+A
+B
+C
+D
+F
+G
+H
+entree
+
+A D 5
+A F 4
+A G 3
+A entree 6
+B D 3
+B entree 11
+C D 2
+C entree 10
+F G 8
+F entree 9
+G H 5
+G entree 9
+H entree 11
+D entree 8
